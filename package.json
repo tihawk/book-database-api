@@ -7,11 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "angular": "^1.6.6",
-    "angular-route": "^1.6.6",
+    "angular": "^1.6.7",
+    "angular-route": "^1.6.7",
     "body-parser": "*",
     "bootstrap": "^3.3.7",
     "express": "*",
+    "jquery": "^3.2.1",
     "mongoose": "*"
   },
   "author": "Kiril P. Blagoev",

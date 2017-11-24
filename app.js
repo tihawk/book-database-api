@@ -6,6 +6,8 @@ var mongoose = require("mongoose");
 Genre = require("./models/genre");
 Book = require('./models/book');
 
+//specify the static files folder
+app.use(express.static(__dirname + '/client'));
 //use the body parser middleware
 app.use(bodyParser.json());
 
@@ -98,5 +100,5 @@ app.delete('/api/books/:_id', function(req, res){
 	});
 });
 
-app.listen(1336);
+app.listen(1335);
 console.log('listening...');

@@ -1,0 +1,11 @@
+img{
+	width:100%;
+}
+
+textarea{
+	resize: vertical;
+}
+
+.previewBox{
+	height:400px;
+}
