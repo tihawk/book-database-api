@@ -1,0 +1,1 @@
+# A simple book collection web application using MongoDB, Node.js, Express,js and AngularjS

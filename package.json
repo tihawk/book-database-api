@@ -1,0 +1,19 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "Simple bookstore app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "body-parser": "*",
+    "bootstrap": "^3.3.7",
+    "express": "*",
+    "mongoose": "*"
+  },
+  "author": "Kiril P. Blagoev",
+  "license": "ISC"
+}
