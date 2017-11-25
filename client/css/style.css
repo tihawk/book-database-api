@@ -8,4 +8,10 @@ textarea{
 
 .previewBox{
 	height:400px;
+	overflow:hidden;
+}
+
+.required{
+	color:red;
+	font-size:0.7em;
 }

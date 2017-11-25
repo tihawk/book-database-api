@@ -1,18 +1,18 @@
-<div class="panel panel-default" ng-init='getBooks()'>
+<div class="panel panel-default" ng-init="getBooks()">
   <div class="panel-heading">
     <h3 class="panel-title">Latest Books</h3>
   </div>
   <div class="panel-body">
-    <div class='row'>
-    	<div ng-repeat='book in books'>
-    		<div class='col-md-6 previewBox'>
-    			<div class='col-md-6'>
+    <div class="row">
+    	<div ng-repeat="book in books">
+    		<div class="col-md-6 col-xs-12 previewBox">
+    			<div class="col-md-6 col-xs-4">
     				<h3>{{book.title}}</h3>
     				<p>{{book.description | limitTo : 250}}</p>
-    				<a class='btn btn-primary' ng-href='#/books/details/{{book._id}}'>View Details</a>
+    				<a class="btn btn-primary" ng-href="#/books/details/{{book._id}}">View Details</a>
     			</div>
-    			<div class='col-md-6'>
-    				<img class='thumbnail' ng-src='{{book.img_url}}'>
+    			<div class="col-md-6 col-xs-8">
+    				<img class="thumbnail" ng-src="{{book.img_url}}">
     			</div>
     		</div>
     	</div>

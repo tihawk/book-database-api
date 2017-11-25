@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html ng-app='myApp'>
+<html ng-app="myApp">
 <head>
 	<title>BookStore</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel='stylesheet' href='node_modules/bootstrap/dist/css/bootstrap.css'>
-	<link rel='stylesheet' href='/css/style.css'>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-	<nav class='navbar navbar-default'>
-		<div class='container-fluid'>
-			<div class='navbar-header'>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
 				<!-- add collapsed? -->
-				<a class='navbar-brand' href='#'>Bookstore</a>
+				<a class="navbar-brand" href="#">Bookstore</a>
 			</div>
-			<ul class='nav navbar-nav'>
-				<li><a href='#/books/add'>Add Book</a></li>
+			<ul class="nav navbar-nav">
+				<li><a href="#/books/add">Add Book</a></li>
 			</ul>
 		</div>
 	</nav> <!-- /container-fluid -->
 
-	<div class='container'>
-		<div class='row'>
-			<div class='col-md-12'>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
 				<div ng-view></div>
 			</div>
 		</div>
 	</div> <!-- /container -->
     
-    <script src='node_modules/jquery/dist/jquery.js'></script>
-    <script src='/node_modules/bootstrap/dist/js/bootstrap.js'></script>
-	<script src='/node_modules/angular/angular.js'></script>
-	<script src='/node_modules/angular-route/angular-route.js'></script>	
-	<script src='/app.js'></script>
-	<script src='/controllers/books.js'></script>
-	<script src='/controllers/genres.js'></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="/node_modules/angular/angular.js"></script>
+	<script src="/node_modules/angular-route/angular-route.js"></script>	
+	<script src="/app.js"></script>
+	<script src="/controllers/books.js"></script>
+	<script src="/controllers/genres.js"></script>
 </body>
 </html>

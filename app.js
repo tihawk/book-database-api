@@ -78,8 +78,14 @@ app.get('/api/books/:_id', function(req, res){
 app.post('/api/books', function(req, res){
 	var book = req.body;
 	Book.addBook(book, function(err, posted){
-		if(err){throw err;}
+		if(err){
+			res.status(400);
+			res.json({
+				"error": 'Bad Data'
+			});
+		} else {
 		res.json(posted);
+		}
 	});
 });
 //update a book
@@ -87,8 +93,14 @@ app.put('/api/books/:_id', function(req, res){
 	var _id = req.params._id;
 	var book = req.body;
 	Book.updateBook(_id, book, {}, function(err, putt){
-		if(err){throw err;}
+		if(err){
+			res.status(400);
+			res.json({
+				"error": 'Bad Data'
+			});
+		} else {
 		res.json(putt);
+		}
 	})
 });
 //delete a book
